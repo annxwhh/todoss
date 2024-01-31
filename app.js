@@ -1,13 +1,12 @@
 let todos = [];
 
 function addTodo() {
-    const inputElement = document.getElementById('todo-input');
-    const todoText = inputElement.value.trim();
+    const todoInput = document.getElementById('todo-input');
+    const todoText = todoInput.value.trim();
 
     if (todoText !== '') {
-        const todo = { text: todoText, status: 'New' };
-        todos.push(todo);
-        inputElement.value = '';
+        todos.push({ text: todoText, status: 'New' });
+        todoInput.value = '';
         updateTodoList();
     }
 }
@@ -15,4 +14,8 @@ function addTodo() {
 function updateTodoList() {
     const todoList = document.getElementById('todo-list');
     const todoCount = document.getElementById('todo-count');
+
+    todoList.innerHTML = '';
+    todoCount.innerText = `Total Todos: ${todos.length}`;
+
 }
