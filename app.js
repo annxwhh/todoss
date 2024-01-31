@@ -17,5 +17,5 @@ function updateTodoList() {
     const todoCount = document.getElementById('todo-count');
 
     todoList.innerHTML = ";
-    todoCount.innerHTML = Total Todos: ${todos.length};
+    todoCount.innerHTML = Total Todos: ${todos.length}
 }
