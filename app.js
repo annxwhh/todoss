@@ -15,7 +15,4 @@ function updateTodoList() {
     const todoList = document.getElementById('todo-list');
     const todoCount = document.getElementById('todo-count');
 
-    todoList.innerHTML = '';
-    todoCount.innerText = `Total Todos: ${todos.length}`;
-
 }
