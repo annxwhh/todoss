@@ -32,8 +32,7 @@ function updateTodoList() {
 
         const label = document.createElement('span');
         label.innerText = todo.status;
-        label.classList.add('label', todo.status.toLowerCase());
-        label.onclick = () => toggleStatus(index);
+    
 
         todoItem.appendChild(todoText);
         todoItem.appendChild(editIcon);
