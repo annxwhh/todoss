@@ -12,6 +12,12 @@ body {
     margin-bottom: 20px;
 }
 
+#todo-count{
+    display: flex;
+    padding-top: 0;
+    color: rgb(255, 0, 119);
+}
+
 #todo-input {
     flex: 1;
     padding: 12px;
