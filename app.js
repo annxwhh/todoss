@@ -43,3 +43,17 @@ function updateTodoList() {
     });
 }
 
+function editTodo(index) {
+    const updatedText = prompt('Edit your todo:', todos[index].text);
+    if (updatedText !== null) {
+        todos[index].text = updatedText;
+        updateTodoList();
+    }
+}
+
+function toggleStatus(index) {
+    todos[index].status = todos[index].status === 'New' ? 'Done' : 'New';
+    updateTodoList();
+}
+
+updateTodoList();

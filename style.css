@@ -1,44 +1,44 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 35px;
+    background-color: #b5bfff;
 }
 
 #todo-form {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 #todo-input {
     flex: 1;
-    padding: 7px;
+    padding: 12px;
 }
 
 #todo-list {
     list-style: none;
     padding: 0;
-    width: 500px;
+    width: 550px;
 }
 
 .todo-item {
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #d6b8b8;
+    border: 1px solid #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    transition: background-color green;
 }
 
 .todo-item:hover {
-    background-color: #794f77;
+    background-color: #ffc9f7;
 }
 
 .edit-icon {
-    margin-left: 10px;
+    margin-left: 25px;
     cursor: pointer;
     display: none;
 }
