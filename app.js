@@ -56,4 +56,5 @@ function toggleStatus(index) {
     updateTodoList();
 }
 
+
 updateTodoList();
