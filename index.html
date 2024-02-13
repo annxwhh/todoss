@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>todo List</title>
+    <title>Todo List</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app">
-        <form id="todo-form">
-            <input type="text" id="todo-input" placeholder="Enter your todo">
-            <button type="button" onclick="addTodo()">create</button>
-        </form>
-        <ul id="todo-list"></ul>
-        <div id="todo-count">todos: 0</div>
-        <script src="app.js"></script>
+    <h1>TODO list</h1>
+    <div id="app-container">
+        <div id="todo-input-container">
+            <form id="todo-form" onsubmit="submitTodoForm(event)">
+                <div>
+                    <input type="text" id="todo-input" placeholder="What would you like to do?">
+                    <button type="submit">Add</button>
+                </div>
+            </form>
+        </div>
+        <div id="todo-list-container" style="display: none;">
+            <ul id="todo-list"></ul>
+            <div id="todo-count">Todos: 0</div>
+        </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
